@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yashraj Singh Thakur | Full Stack Developer</title>
+<meta name="description" content="Yashraj Singh Thakur — Full Stack Developer, DSA Enthusiast, preparing for top product-based companies." />
+<meta property="og:title" content="Yashraj Singh Thakur | Full Stack Developer" />
+<meta property="og:description" content="Full Stack Developer, DSA Enthusiast, preparing for Google." />
+<meta property="og:type" content="website" />
+
+<!-- Google Fonts: Poppins (headings) + Inter (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loader">
+    <div class="loader-logo">YS</div>
+    <div class="loader-text">Loading<span class="dots">...</span></div>
+  </div>
+
+  <!-- ============ SCROLL PROGRESS BAR ============ -->
+  <div id="scroll-progress"></div>
+
+  <!-- ============ CURSOR GLOW ============ -->
+  <div id="cursor-glow"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="logo">YS<span class="logo-dot">.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#certificates" class="nav-link" data-section="certificates">Certificates</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Yashraj595" target="_blank" rel="noopener" class="icon-btn" aria-label="Github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yashraj-singh-thakur-7b3b05331/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO / HOME SECTION ============ -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="grid-overlay"></div>
+        <canvas id="particles"></canvas>
+      </div>
+
+      <div class="hero-container reveal">
+        <div class="hero-left">
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1 class="hero-name">Yashraj Singh Thakur</h1>
+          <div class="hero-typing">
+            <span id="typingText"></span><span class="cursor-blink">|</span>
+          </div>
+          <p class="hero-desc">
+            I build fast, reliable full-stack applications and sharpen my problem-solving
+            through DSA — currently preparing for roles at top product-based companies like Google.
+          </p>
+          <div class="hero-buttons">
+            <a href="assets/Yashraj_Singh_Thakur_Resume.pdf" download class="btn btn-primary">
+              <i class="fa-solid fa-download"></i> Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/Yashraj595" target="_blank" rel="noopener" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yashraj-singh-thakur-7b3b05331/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://leetcode.com/u/Yashraj_Singh_thakur/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+            <a href="https://www.geeksforgeeks.org/profile/ys239rmzz" target="_blank" rel="noopener" aria-label="GeeksforGeeks"><i class="fa-solid fa-laptop-code"></i></a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/yashrajsinghthakur520/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/yourusername" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="mailto:yashrajsinghthakur520@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-image-wrap">
+            <div class="hero-image-ring"></div>
+            <div class="hero-image-card">
+              <i class="fa-solid fa-code hero-image-icon"></i>
+            </div>
+            <div class="floating-chip chip-1"><i class="fa-brands fa-react"></i> React</div>
+            <div class="floating-chip chip-2"><i class="fa-brands fa-node-js"></i> Node.js</div>
+            <div class="floating-chip chip-3"><i class="fa-solid fa-database"></i> MongoDB</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <span>Scroll Down</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section id="about" class="about">
+      <div class="section-container">
+        <p class="section-eyebrow reveal">About Me</p>
+        <h2 class="section-title reveal">Who Am I?</h2>
+
+        <div class="about-grid">
+          <div class="about-image reveal-left">
+            <div class="about-image-frame">
+              <i class="fa-solid fa-user-graduate about-image-icon"></i>
+            </div>
+          </div>
+
+          <div class="about-content reveal-right">
+            <p class="about-text">
+              I'm a Full Stack Developer and Computer Science student with a strong passion for
+              building clean, scalable web applications and solving algorithmic problems. I enjoy
+              turning ideas into real, working products — from the database schema to the last
+              pixel of the UI.
+            </p>
+            <p class="about-text">
+              Alongside development, I actively practice Data Structures & Algorithms and I'm
+              preparing to break into top product-based companies. I believe in writing code that's
+              not just functional, but readable, maintainable, and fast.
+            </p>
+
+            <div class="about-info-grid">
+              <div class="info-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                  <h4>Education</h4>
+                  <p>B.Tech, Computer Science Engineering — LPU</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fa-solid fa-briefcase"></i>
+                <div>
+                  <h4>Focus</h4>
+                  <p>Full Stack Development &amp; DSA</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fa-solid fa-bullseye"></i>
+                <div>
+                  <h4>Goal</h4>
+                  <p>Product-based companies — Google &amp; beyond</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="skills-heading">Skills</h3>
+            <div class="skills-pills">
+              <span class="pill"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="pill"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="pill"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+              <span class="pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="pill"><i class="fa-brands fa-react"></i> React</span>
+              <span class="pill"><i class="fa-brands fa-node-js"></i> Node.js</span>
+              <span class="pill"><i class="fa-solid fa-server"></i> Express</span>
+              <span class="pill"><i class="fa-solid fa-database"></i> MongoDB</span>
+              <span class="pill"><i class="fa-solid fa-database"></i> SQL</span>
+              <span class="pill"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="pill"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="pill"><i class="fa-solid fa-wind"></i> Tailwind</span>
+              <span class="pill"><i class="fa-solid fa-diagram-project"></i> DSA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE SECTION ============ -->
+    <section id="experience" class="experience">
+      <div class="section-container">
+        <p class="section-eyebrow reveal">Experience</p>
+        <h2 class="section-title reveal">Internships &amp; Work</h2>
+
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Web Development Intern</h3>
+                <span class="timeline-date">Jun 2025 — Aug 2025</span>
+              </div>
+              <p class="timeline-company"><i class="fa-solid fa-building"></i> Company Name Pvt. Ltd. · Remote</p>
+              <p class="timeline-desc">
+                Worked on building and maintaining full-stack features for a live product, collaborated
+                with a small team using Git workflows, and shipped UI improvements that were used by
+                real customers.
+              </p>
+              <ul class="timeline-points">
+                <li>Built responsive React components and REST API endpoints in Node/Express</li>
+                <li>Fixed bugs and improved page load performance</li>
+                <li>Participated in code reviews and daily stand-ups</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Open Source Contributor</h3>
+                <span class="timeline-date">2024 — Present</span>
+              </div>
+              <p class="timeline-company"><i class="fa-solid fa-code-branch"></i> Self-driven · Remote</p>
+              <p class="timeline-desc">
+                Contributing to open-source repositories, fixing issues, and learning collaborative
+                development practices through real pull requests and code reviews.
+              </p>
+              <ul class="timeline-points">
+                <li>Raised and resolved GitHub issues in beginner-friendly repositories</li>
+                <li>Improved documentation and fixed small bugs</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section id="projects" class="projects">
+      <div class="section-container">
+        <p class="section-eyebrow reveal">My Work</p>
+        <h2 class="section-title reveal">Featured Projects</h2>
+
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <article class="project-card reveal" data-category="fullstack">
+            <div class="project-image">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="project-body">
+              <h3>ShopEase — E-Commerce Platform</h3>
+              <p>A full-featured e-commerce app with cart, checkout, auth, and an admin
+                dashboard for managing products and orders.</p>
+              <div class="tech-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node</span>
+                <span class="tag">Express</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Github</a>
+                <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="fullstack">
+            <div class="project-image">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <div class="project-body">
+              <h3>TaskFlow — Team Task Manager</h3>
+              <p>A collaborative task management tool with drag-and-drop boards, real-time
+                updates, and role-based access control.</p>
+              <div class="tech-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node</span>
+                <span class="tag">Socket.io</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Github</a>
+                <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="frontend">
+            <div class="project-image">
+              <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+            <div class="project-body">
+              <h3>SkyCast — Weather Dashboard</h3>
+              <p>A sleek weather dashboard with animated icons, hourly forecasts, and
+                location search backed by a public weather API.</p>
+              <div class="tech-tags">
+                <span class="tag">React</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Github</a>
+                <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="backend">
+            <div class="project-image">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <div class="project-body">
+              <h3>NoteVault API</h3>
+              <p>A secure REST API for a notes app with JWT authentication, rate limiting,
+                and role-based route protection.</p>
+              <div class="tech-tags">
+                <span class="tag">Node</span>
+                <span class="tag">Express</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">JWT</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Github</a>
+                <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="frontend">
+            <div class="project-image">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="project-body">
+              <h3>DSA Visualizer</h3>
+              <p>An interactive tool that visualizes sorting and pathfinding algorithms
+                step-by-step to help learners understand DSA concepts.</p>
+              <div class="tech-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Github</a>
+                <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="fullstack">
+            <div class="project-image">
+              <i class="fa-solid fa-blog"></i>
+            </div>
+            <div class="project-body">
+              <h3>DevBlog — Blogging Platform</h3>
+              <p>A full-stack blogging platform with markdown editor, tags, comments,
+                and a clean, distraction-free reading experience.</p>
+              <div class="tech-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Github</a>
+                <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATES SECTION ============ -->
+    <section id="certificates" class="certificates">
+      <div class="section-container">
+        <p class="section-eyebrow reveal">Achievements</p>
+        <h2 class="section-title reveal">Certificates</h2>
+
+        <div class="certificates-grid">
+
+          <div class="certificate-card reveal">
+            <div class="certificate-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="certificate-body">
+              <h3>Full Stack Web Development</h3>
+              <p class="certificate-issuer">Issuing Platform Name</p>
+              <p class="certificate-date">Issued Mon 2025</p>
+              <a href="#" target="_blank" rel="noopener" class="certificate-link">
+                View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="certificate-card reveal">
+            <div class="certificate-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="certificate-body">
+              <h3>Data Structures &amp; Algorithms</h3>
+              <p class="certificate-issuer">Issuing Platform Name</p>
+              <p class="certificate-date">Issued Mon 2025</p>
+              <a href="#" target="_blank" rel="noopener" class="certificate-link">
+                View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="certificate-card reveal">
+            <div class="certificate-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="certificate-body">
+              <h3>Java Programming</h3>
+              <p class="certificate-issuer">Issuing Platform Name</p>
+              <p class="certificate-date">Issued Mon 2025</p>
+              <a href="#" target="_blank" rel="noopener" class="certificate-link">
+                View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="certificate-card reveal">
+            <div class="certificate-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="certificate-body">
+              <h3>SQL &amp; Database Management</h3>
+              <p class="certificate-issuer">Issuing Platform Name</p>
+              <p class="certificate-date">Issued Mon 2025</p>
+              <a href="#" target="_blank" rel="noopener" class="certificate-link">
+                View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section id="contact" class="contact">
+      <div class="section-container">
+        <p class="section-eyebrow reveal">Get In Touch</p>
+        <h2 class="section-title reveal">Let's Work Together</h2>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <p class="contact-lead">
+              Have a project in mind, an opportunity to discuss, or just want to say hi?
+              My inbox is always open.
+            </p>
+
+            <a href="mailto:yashrajsinghthakur520@gmail.com" class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>yashrajsinghthakur520@gmail.com</span>
+            </a>
+            <a href="tel:+918462010843" class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 84620 10843</span>
+            </a>
+            <a href="https://github.com/Yashraj595" target="_blank" rel="noopener" class="contact-item">
+              <i class="fa-brands fa-github"></i>
+              <span>github.com/Yashraj595</span>
+            </a>
+            <a href="https://www.linkedin.com/in/yashraj-singh-thakur-7b3b05331/" target="_blank" rel="noopener" class="contact-item">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>linkedin.com/in/yashraj-singh-thakur</span>
+            </a>
+            <a href="https://leetcode.com/u/Yashraj_Singh_thakur/" target="_blank" rel="noopener" class="contact-item">
+              <i class="fa-solid fa-code"></i>
+              <span>leetcode.com/u/Yashraj_Singh_thakur</span>
+            </a>
+            <a href="https://www.geeksforgeeks.org/profile/ys239rmzz" target="_blank" rel="noopener" class="contact-item">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span>geeksforgeeks.org/profile/ys239rmzz</span>
+            </a>
+            <a href="https://facebook.com/yourusername" target="_blank" rel="noopener" class="contact-item">
+              <i class="fa-brands fa-facebook-f"></i>
+              <span>facebook.com/yourusername</span>
+            </a>
+            <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" class="contact-item">
+              <i class="fa-brands fa-instagram"></i>
+              <span>instagram.com/yourusername</span>
+            </a>
+            <a href="https://x.com/yourusername" target="_blank" rel="noopener" class="contact-item">
+              <i class="fa-brands fa-x-twitter"></i>
+              <span>x.com/yourusername</span>
+            </a>
+          </div>
+
+          <form class="contact-form reveal-right" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>Made with <i class="fa-solid fa-heart"></i> by Yashraj Singh Thakur &copy; <span id="year"></span></p>
+      <div class="footer-socials">
+        <a href="https://github.com/Yashraj595" target="_blank" rel="noopener" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/yashraj-singh-thakur-7b3b05331/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://leetcode.com/u/Yashraj_Singh_thakur/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+        <a href="https://www.geeksforgeeks.org/profile/ys239rmzz" target="_blank" rel="noopener" aria-label="GeeksforGeeks"><i class="fa-solid fa-laptop-code"></i></a>
+        <a href="https://facebook.com/yourusername" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/yourusername" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP BUTTON ============ -->
+  <button id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
