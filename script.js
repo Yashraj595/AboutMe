@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       themeIcon.classList.add('fa-sun');
     }
   }
-  applyTheme(savedTheme || 'dark');
+  applyTheme(savedTheme || 'light');
 
   themeToggle.addEventListener('click', () => {
     const isLight = document.body.classList.contains('light-theme');
